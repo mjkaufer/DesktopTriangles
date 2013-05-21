@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Triangle_Solver</title>
+
+    <!-- Triangle_Solver references -->
+    <link href="css/homestyle.css" rel="stylesheet" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+</head>
+<body onclick="setinputs()">
+<div id="big" style="margin-left:5px;">
+    <div class="h"></div>
+<div class="h" style="top:150px;"></div>
+
+    <div class="slide">
+    
+    <p class="slide" style="font-size:72px;margin-top:25px;">Triangle Solver <span style="color:red;">BETA</span></p>
+    </div>
+
+<div class="canvas">
+<p id="area"></p>
+<p style="position:absolute;right:5%;">Your Triangle</p>
+
+
+<canvas id="myCanvas" width="400" height="300" style="border:solid black 2px;padding:10px;border-radius:5px;"></canvas>
+</div>
+
+<br>
+<select name="side" id="choice">
+
+<option value="ASA">ASA</option>
+<option value="SAS">SAS</option>
+<option value="SSS">SSS</option>
+<option value="SSA">SSA</option>
+
+</select>
+
+
+<p id="test" class="sm">Select which method you're solving with. Angles in degrees, please.</p>
+<p id="test1" class="sm">Derp.</p>
+<p class="sm">Ensure that your triangle lines up right.</p>
+<p class="sm">NaN means not a number, and occurs due to an invalid input.</p>
+<p class="sm">The coincedent angles of angles over 180&deg will automatically be derived.</p>
+
+
+<form>
+<p id="box1"><span id="span1">Side a</span> <input type="text" name="inp1" id="input1"></p>
+<p id="box2"><span id="span2">Side b</span> <input type="text" name="inp2" id="input2"></p>
+<p id="box3"><span id="span3">Angle A</span> <input type="text" name="inp3" id="input3"></p>
+
+<p><span id="span4" class="sm"></span></p>
+<p><span id="span5" class="sm"></span></p>
+<p><span id="span6" class="sm"></span></p>
+
+</form> 
+
+<button type="button" onclick="setinputs()" style="border:solid black 2px;">Complete triangle!</button> 
+
+<br>
+
+</div>
+</body>
+</html>
